@@ -1,4 +1,6 @@
+
 <div class="kapsayan">
+   
     <div class="header">
         <ul>
             <a href="#"><li>Home Page</li></a>
@@ -10,6 +12,25 @@
     </div>
     <div class="content">
 
+
+        <div class="giris">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Username">
+                    </td>
+                </tr>
+                <tr>
+                    <input type="password" placeholder="Password">
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><button>Login</button></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
         <div class="kategori">
             <ul>
                 <a href="#"><li>Laptop</li></a>
@@ -18,6 +39,7 @@
                 <a href="#"><li>Tablet</li></a>
               
             </ul>
+            
         </div>
 
         <table>
@@ -136,5 +158,36 @@
     .content table img{
         width: 300px;
         height: 300px;
+    }
+    .content .giris{
+        float: right;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    .kapsayan .content .giris tr button {
+        float: right;
+    }
+
+    .giris input{
+        border-radius: 15px;
+        height: 30px;
+        background-color:rgb(111, 148, 185);
+        margin-top: 15px;
+    }
+
+    .giris button{
+        margin-top: 20px;
+        height: 40px;
+        width: 70px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(62, 201, 62);
+    }
+
+    ::placeholder {
+        color: white;
+        opacity: 0.7; /* Firefox */
+        text-align:center;
     }
 </style>
